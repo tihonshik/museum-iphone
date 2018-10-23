@@ -15,7 +15,7 @@ header{
     width: 100%;
     background: rgba(0,0,0,0.3);
     display: flex;
-    position: fixed;
+    position: absolute;
 }
 .header_logo{
     text-transform: uppercase;
@@ -120,9 +120,88 @@ main .main_about{
     height: 60px;
     width: 60px;
 }
+.mobile{
+    background: none;
+    width: 75%;
+    margin: 50px auto;
+}
+.about_phone{
+    margin: 0px auto 60px auto;
+    width: 60%;
 
+}
+.about_phone h1{
+    color: #999;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid #ff8f1d;
+    padding-bottom: 20px;
+}
+.about_phone p{
+    color: #999999;
+    text-align: center;
+}
+main .delimiter {
+    width: 100%;
+    height: 20px;
+    background: #f8f8f8;
+}
+.fotorama {
+    margin: 0 auto;
+    display: table;
+}
 
+.suggestions {
+    width: 100%;
 
+    font-size: 24px;
+}
+
+.suggestions .heading {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+    font-size: 45px;
+    font-weight: bold;
+    border-bottom: 3px solid #ff8f1d;
+    padding-bottom: 20px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    margin: 50px 20px 20px 50px;
+    padding: 20px 20px 20px 50px;
+    border: 4px solid #ff8f1d;
+    border-radius: 20px;
+}
+
+.right {
+    flex-direction: row-reverse;
+
+}
+
+.suggestion img {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+#toTop {
+    width:100px;
+    height: 100px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    background: rgba(173, 208, 211, 0.7);
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+}
 
 
 
@@ -139,6 +218,14 @@ main .main_about{
 }
 
 @media screen and (max-width: 1020px){
+    main{
+        height: 540px;
+        width: 100%;
+    }
+    main .main_welcome{
+        text-align: center;
+        padding: 250px 0 400px 0;
+    }
     .topnav a{
         display: none;
     }
@@ -171,9 +258,11 @@ main .main_about{
         display: block;
         text-align: left;
     }
-
-
-
+    .wrapper{
+        background: none;
+        width: 75%;
+        margin: -280px auto;
+    }
     main .main_welcome{
 
     }
@@ -182,6 +271,11 @@ main .main_about{
     }
     main .main_welcome p {
         font-size: 25px;
+    }
+    .wrapper{
+        background: none;
+        width: 75%;
+        margin: 0 auto;
     }
     .main_about{
         flex-direction: column;
@@ -197,9 +291,54 @@ main .main_about{
         margin-top: 10px;
         font-size: 20px;
     }
+    .about_left{
+        text-align: center;
+    }
+    .mw-100 {
+        margin-top: -150px;
+        min-width: 60%;
+    }
+
+    .fotorama {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .footer {
+        padding-bottom: 26px;
+        padding-top: 16px;
+        margin-top: 100px;
+        background: #212121;
+    }
+
+    .copyright {
+        color: white;
+        text-align: center;
+
+        bottom: 10px;
+
+        width: 100%;
+
+        font-size: 18px;
+    }
+
+    .contacts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacts img {
+        height: 60px;
+        width: 60px;
+    }
+
 }
 
 @media screen and (max-width: 550px){
+    main .main_welcome{
+        text-align: center;
+        padding: 180px 0 400px 0;
+    }
     .topnav a{
         display: none;
     }
@@ -233,11 +372,12 @@ main .main_about{
         text-align: left;
     }
 
-
-
-    main .main_welcome{
-
+    .wrapper{
+        background: none;
+        width: 75%;
+        margin: 0 auto;
     }
+
     main .main_welcome p{
         font-size: 14px;
     }
@@ -246,6 +386,9 @@ main .main_about{
     }
     .main_about{
         flex-direction: column;
+    }
+    .about_left{
+        text-align: center;
     }
     .about_right{
         text-align: center;
@@ -259,8 +402,13 @@ main .main_about{
         font-size: 20px;
     }
     .mw-100 {
-        min-width: 50%;
+        min-width: 30%;
     }
+
+    .suggestion img {
+        display: none;
+    }
+
 }
 
 

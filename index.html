@@ -4,11 +4,21 @@
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="UTF-8">
 
-	<title>iphmus</title>
+	<title>IPHMUS</title>
 
 	<link rel="icon" href="img/icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+
+
+	<!-- 1. Link to jQuery (1.8 or later), -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+	<!-- fotorama.css & fotorama.js. -->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
+
+
 
 </head>
 <body>
@@ -18,10 +28,10 @@
 	</div>
 	<nav>
 		<div class="topnav" id="myTopnav">
-			<a href="#">О сайте</a>
+			<a href="#about_site">О сайте</a>
 			<a href="#">Обзоры</a>
-			<a href="#">Советы</a>
-			<a href="#">Контакты</a>
+			<a href="#help">Советы</a>
+			<a href="#contacts">Контакты</a>
 			<a href="#" id="menu" class="icon">&#9776</a>
 		</div>
 	</nav>
@@ -32,9 +42,9 @@
 		<h1>МУЗЕЙ <span class="welcome">IPHONE</span></h1>
 	</div>
 	<div class="wrapper">
-		<div class="main_about">
+		<div id="about_site" class="main_about">
 			<div class="about_left">
-				<img class="mw-100" src="https://images.vexels.com/media/users/3/129234/isolated/preview/73970c892d748c7507db8e10d71535b0-apple-logo-icon-by-vexels.png" width="400" alt="left">
+				<img class="mw-100" src="https://images.vexels.com/media/users/3/129234/isolated/preview/73970c892d748c7507db8e10d71535b0-apple-logo-icon-by-vexels.png" width="300" alt="left">
 			</div>
 			<div class="about_right">
 				<h1>Немного о нас</h1>
@@ -50,25 +60,86 @@
 		</div>
 	</div>
 
-	<div class="footer">
+	<div class="delimiter">&nbsp;</div>
+	<!-- 2. Add images to <div class="fotorama"></div>. -->
+	<div class="mobile">
+		<div class="about_phone">
+			<h1>IPHONE XS</h1>
+			<p>iPhone XS оснащен OLED-экраном 5,8 дюймов. Смартфон будет поставляться в стальном корпусе с 64, 256
+				или 512 ГБ внутренней памяти черном, серебристом и золотом цветах.</p>
+		</div>
+		<div class="fotorama">
+			<img src="img/iphXS/img1.jpg">
+			<img src="img/iphXS/img2.jpg">
+			<img src="img/iphXS/img3.jpeg">
+		</div>
+
+	</div>
+	<div class="delimiter">&nbsp;</div>
+	<!-- 2. Add images to <div class="fotorama"></div>. -->
+	<div class="mobile">
+		<div class="about_phone">
+			<h1>IPHONE XR</h1>
+			<p>iPhone XR официально представлен на традиционной сентябрьской презентации новых продуктов компании
+				Apple. Как и ожидалось, у iPhone XR будет LCD-экран в 6,1 дюйма (напомним, у более премиального
+				iPhone XS экран OLED). Это по сути замена популярного и относительно недорогого iPhone 8.</p>
+		</div>
+		<div class="fotorama">
+			<img src="img/iphXR/img1.jpg">
+			<img src="img/iphXR/img2.jpg">
+			<img src="img/iphXR/img3.jpg">
+		</div>
+	</div>
+
+	<div class="delimiter">&nbsp;</div>
+
+	<div id="help" class="suggestions">
+		<div class="heading">Советы</div>
+		<div class="suggestion">
+			<img src="img/suggestion/icon.png">
+			<div class="p">Создавайте Memoji в соответствии со своим характером и настроением. Затем в неограниченном
+				количестве используйте свои образы в приложениях «Сообщения» и FaceTime.
+			</div>
+		</div>
+		<div class="suggestion right">
+			<img src="img/suggestion/icon.png">
+			<div class="p">Постарайтесь как можно реже выходить из дома. Пик концентрации пыльцы в воздухе – утром с
+				6.00 до 10.00 и вечером с 18.00 до 22.00. Старайтесь в это время не появляться на улице.
+			</div>
+		</div>
+		<div class="suggestion">
+			<img src="img/suggestion/icon.png">
+			<div class="p">Функция «Экранное время» поможет вам узнать, как вы и ваши родные используют свои
+				устройства iOS. Можно еженедельно узнавать, сколько времени использовалось устройство, и устанавливать
+				ограничения для приложений.
+			</div>
+		</div>
+		<div class="suggestion right">
+			<img src="img/suggestion/icon.png">
+			<div class="p">Оживите свои беседы с помощью эффектов камеры, полноэкранных анимаций, эффектов для
+				всплывающих окон сообщений и рукописных заметок.
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="contacts" class="footer">
 		<div class="contacts">
-			<a href="#"><img src="img/social/Facebook.png"></a>
-			<a href="#"><img src="img/social/Github.png"></a>
-			<a href="#"><img src="img/social/Instagram.png"></a>
-			<a href="#"><img src="img/social/Twitter.png"></a>
-			<a href="#"><img src="img/social/YouTube.png"></a>
+			<a href="https://www.facebook.com/filipp.tihonovich"><img src="img/social/Facebook.png"></a>
+			<a href="https://github.com/tihonshik"><img src="img/social/Github.png"></a>
+			<a href="https://www.instagram.com/tihon_f/"><img src="img/social/Instagram.png"></a>
+			<a href="https://twitter.com/FTihon"><img src="img/social/Twitter.png"></a>
+			<a href="https://www.youtube.com/"><img src="img/social/YouTube.png"></a>
 		</div>
 		<div class="copyright">@2018. Все права защищены.</div>
 	</div>
-
 </main>
 
 
 
 
-
-
-
+<DIV ID = "toTop" ><img src="https://www.freeiconspng.com/uploads/up-arrow-png-8.png" width="100%"></ DIV >
 <script src="js/script.js"></script>
 </body>
 </html>
